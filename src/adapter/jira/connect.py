@@ -83,7 +83,7 @@ class Connect:
         data = dict(
             jql=jql,
             fields=['timetracking'],
-            maxResults=100,
+            maxResults=1000,
         )
 
         try:

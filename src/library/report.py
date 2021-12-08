@@ -30,7 +30,7 @@ class Report:
             timetracking = issue.get('fields').get('timetracking')
             assert timetracking
 
-            estimate = timetracking.get('originalEstimateSeconds')
+            estimate = timetracking.get('originalEstimateSeconds', 0)
             if estimate == 0:
                 warning(
                     'Issue without Original Estimate: "{key}"'.format(
