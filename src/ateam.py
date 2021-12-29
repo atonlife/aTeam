@@ -41,7 +41,7 @@ class ATeam:
             cli.parse()
         except ConnectionError as server:
             exception("Cannot connection to '{0}'".format(server))
-
+            raise
 
 
 if __name__ == '__main__':
